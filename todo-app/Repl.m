@@ -8,6 +8,14 @@
 #import <Foundation/Foundation.h>
 #import "Repl.h"
 
+char* (^getCommandBlock)(void) = ^{
+    char command[50] = {0};
+    scanf("%[^\n]s", command);
+    NSLog(@"%s", command);
+    
+    return command;
+};
+
 @implementation Repl
 - (id) init
 {
@@ -22,7 +30,8 @@
     NSString *command;
 
     while (true) {
-        scanf("%[^\n]@", command);
+//        scanf("%[^\n]@", command);
+        getCommandBlock();
         
         if ([command isEqualToString:@"exit"]) {
             return;
@@ -31,3 +40,5 @@
 }
 
 @end
+
+
