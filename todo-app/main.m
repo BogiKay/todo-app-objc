@@ -6,19 +6,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "myClass.h"
+#import "ToDoItem.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-        MyClass *mc = [MyClass new];
-        [mc setCount:54];
-        NSLog(@"Count: %d", [mc getCount]);
-        char str[50] = {0};
-        NSLog(@"What would you liek to do?\n");
-        scanf("%[^\n]s",str);
-        NSLog(@"So you want to %s", str);
+        ToDoItem *todo1 = [[ToDoItem alloc] init];
+        
+        NSLog(@"Todo item 1 %@", [todo1 getContent]);
         
         
     }

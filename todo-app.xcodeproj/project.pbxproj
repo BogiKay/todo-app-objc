@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		76E5CB742B86AC99006A57F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E5CB732B86AC99006A57F5 /* main.m */; };
 		76E5CB7C2B8BD764006A57F5 /* myClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E5CB7B2B8BD764006A57F5 /* myClass.m */; };
+		76E5CB7F2B8D0E93006A57F5 /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E5CB7E2B8D0E93006A57F5 /* ToDoItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		76E5CB732B86AC99006A57F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		76E5CB7A2B86ACD5006A57F5 /* myClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myClass.h; sourceTree = "<group>"; };
 		76E5CB7B2B8BD764006A57F5 /* myClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myClass.m; sourceTree = "<group>"; };
+		76E5CB7E2B8D0E93006A57F5 /* ToDoItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
+		76E5CB802B8D0EA4006A57F5 /* ToDoItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				76E5CB732B86AC99006A57F5 /* main.m */,
 				76E5CB7A2B86ACD5006A57F5 /* myClass.h */,
 				76E5CB7B2B8BD764006A57F5 /* myClass.m */,
+				76E5CB7E2B8D0E93006A57F5 /* ToDoItem.m */,
+				76E5CB802B8D0EA4006A57F5 /* ToDoItem.h */,
 			);
 			path = "todo-app";
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E5CB7F2B8D0E93006A57F5 /* ToDoItem.m in Sources */,
 				76E5CB7C2B8BD764006A57F5 /* myClass.m in Sources */,
 				76E5CB742B86AC99006A57F5 /* main.m in Sources */,
 			);
