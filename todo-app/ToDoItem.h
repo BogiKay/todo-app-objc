@@ -19,6 +19,9 @@
 - (NSString *)getContent;
 - (NSDate *)getDoneAt;
 - (id) init;
-
+- (id) initWithContent:(NSString *)todo;
++ (instancetype) initWithContent:(NSString *)contentOfTask;
+- (id) initWithContent:(NSString *)task andStatus:(bool)status;
+- (bool) isDone;
 @end
 #endif /* ToDoItem_h */

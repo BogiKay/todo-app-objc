@@ -36,4 +36,42 @@
     
     return self;
 }
+
+- (id) initWithContent:(NSString *)todo
+{
+    self = [super init];
+    
+    if (self) {
+        content = todo;
+        done = false;
+        doneAt = nil;
+    }
+    
+    return self;
+}
+
+- (bool) isDone
+{
+    return done;
+}
+
++ (instancetype) initWithContent:(NSString *)contentOfTask
+{
+    ToDoItem *item = [[ToDoItem alloc] initWithContent:contentOfTask];
+    
+    return item;
+}
+
+- (id) initWithContent:(NSString *)task andStatus:(bool)status
+{
+    self = [super init];
+    
+    if (self) {
+        content = task;
+        done = status;
+        doneAt = nil;
+    }
+    
+    return self;
+}
 @end
