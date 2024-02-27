@@ -10,6 +10,7 @@
 		76E5CB742B86AC99006A57F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E5CB732B86AC99006A57F5 /* main.m */; };
 		76E5CB7F2B8D0E93006A57F5 /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E5CB7E2B8D0E93006A57F5 /* ToDoItem.m */; };
 		76E5CB832B8D21BA006A57F5 /* Repl.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E5CB822B8D21BA006A57F5 /* Repl.m */; };
+		76E5CB862B8E66E6006A57F5 /* Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E5CB852B8E66E6006A57F5 /* Storage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		76E5CB802B8D0EA4006A57F5 /* ToDoItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
 		76E5CB812B8D1F3D006A57F5 /* Repl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repl.h; sourceTree = "<group>"; };
 		76E5CB822B8D21BA006A57F5 /* Repl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Repl.m; sourceTree = "<group>"; };
+		76E5CB842B8E6193006A57F5 /* Storage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Storage.h; sourceTree = "<group>"; };
+		76E5CB852B8E66E6006A57F5 /* Storage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Storage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				76E5CB7E2B8D0E93006A57F5 /* ToDoItem.m */,
 				76E5CB802B8D0EA4006A57F5 /* ToDoItem.h */,
 				76E5CB822B8D21BA006A57F5 /* Repl.m */,
+				76E5CB842B8E6193006A57F5 /* Storage.h */,
+				76E5CB852B8E66E6006A57F5 /* Storage.m */,
 			);
 			path = "todo-app";
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76E5CB832B8D21BA006A57F5 /* Repl.m in Sources */,
+				76E5CB862B8E66E6006A57F5 /* Storage.m in Sources */,
 				76E5CB7F2B8D0E93006A57F5 /* ToDoItem.m in Sources */,
 				76E5CB742B86AC99006A57F5 /* main.m in Sources */,
 			);

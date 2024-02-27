@@ -7,11 +7,21 @@
 
 #ifndef Repl_h
 #define Repl_h
+#import "ToDoItem.h"
+
+@protocol TodoDataSource <NSObject>
+
+- (NSUInteger) numberOfTodos;
+- (void) saveTodo:(ToDoItem*)todo;
+
+@end
 
 @interface Repl : NSObject
-
 - (id)init;
 - (void)start;
+
+@property (strong, nonatomic) __block id <TodoDataSource> dataSource;
+
 @end
 
 
