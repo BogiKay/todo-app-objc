@@ -8,12 +8,17 @@
 #import <Foundation/Foundation.h>
 #import "Repl.h"
 
-char* (^getCommandBlock)(void) = ^{
+
+NSString* (^getCommandBlock)(void) = ^{
     char command[50] = {0};
-    scanf("%[^\n]s", command);
-    NSLog(@"%s", command);
+    NSLog(@"Provide a command\n");
     
-    return command;
+    scanf("%[^\n]s", command);
+    fpurge(stdin);
+
+    NSString *commandString = [NSString stringWithCString:command encoding:1];
+    
+    return commandString;
 };
 
 @implementation Repl
@@ -30,12 +35,16 @@ char* (^getCommandBlock)(void) = ^{
     NSString *command;
 
     while (true) {
-//        scanf("%[^\n]@", command);
-        getCommandBlock();
+        NSString *commandStr = [NSString alloc];
         
-        if ([command isEqualToString:@"exit"]) {
+        commandStr = getCommandBlock();
+        
+        if ([commandStr isEqualToString:@"exit"]) {
+            NSLog(@"Exitting the app. Thanks!\n");
             return;
         }
+
+        NSLog(@"Executting provided command: %@\n", commandStr);
     }
 }
 

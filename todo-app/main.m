@@ -9,14 +9,6 @@
 #import "ToDoItem.h"
 #import "Repl.h"
 
-void (^testBlock) (NSString*) =  ^(NSString *name){
-    NSLog(@"testBlock %@", name);
-};
-
-double (^multiplyBy5) (double) = ^(double val) {
-    return val * 5;
-};
-
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         ToDoItem *todo1 = [[ToDoItem alloc] init];
@@ -41,12 +33,7 @@ int main(int argc, const char * argv[]) {
         }
         
         Repl *r = [[Repl alloc] init];
-//        [r start];
-        testBlock(@"Bogusz");
-        double v = multiplyBy5(5);
-        
-        NSLog(@"Val %f", v);
-        
+        [r start];
         
     }
     return 0;
